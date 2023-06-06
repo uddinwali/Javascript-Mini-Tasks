@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Switch Case Caluclator</title>
+</head>
+
+<body>
+<script>
+var num1 = parseInt(prompt("Enter Number : ",0));
+var num2 = parseInt(prompt("Enter Number : ",0));
+
+var op = prompt("Select Operator : \n 1) '+' \n 2) '-' \n 3) '*' \n 4) '/' \n 5) '%' \n 6) '^' \n 7) 'log' \n 8) 'root' \n 9) 'tan' \n 10) 'sin' \n 11) 'cos' ");
+
+switch(op)
+{
+	case '+':
+	var result = num1 + num2;
+	document.write("<table border='1'> <tr> <td>" + "num1" + "</td> <td>" + "num2" + "</td> <td>" + "Operator" + "</td> <td>" + "Result" + "</td>" + "<br>");
+	document.write("<tr> <td>" + num1 + "</td> <td>" + num2 + "</td> <td>" + op + "</td> <td>" + result + "</td>");
+	break;
+	
+	case '-':
+	var result = num1 - num2;
+	document.write("<table border='1'> <tr> <td>" + "num1" + "</td> <td>" + "num2" + "</td> <td>" + "Operator" + "</td> <td>" + "Result" + "</td>" + "<br>");
+	document.write("<tr> <td>" + num1 + "</td> <td>" + num2 + "</td> <td>" + op + "</td> <td>" + result + "</td>");
+	break;
+	
+	case '*':
+	var result = num1 * num2;
+	document.write("<table border='1'> <tr> <td>" + "num1" + "</td> <td>" + "num2" + "</td> <td>" + "Operator" + "</td> <td>" + "Result" + "</td>" + "<br>");
+	document.write("<tr> <td>" + num1 + "</td> <td>" + num2 + "</td> <td>" + op + "</td> <td>" + result + "</td>");
+	break;
+	
+	case '/':
+	var result = num1 / num2;
+	document.write("<table border='1'> <tr> <td>" + "num1" + "</td> <td>" + "num2" + "</td> <td>" + "Operator" + "</td> <td>" + "Result" + "</td>" + "<br>");
+	document.write("<tr> <td>" + num1 + "</td> <td>" + num2 + "</td> <td>" + op + "</td> <td>" + result + "</td>");
+	break;
+	
+	case '%':
+	var result = num1 % num2;
+	document.write("<table border='1'> <tr> <td>" + "num1" + "</td> <td>" + "num2" + "</td> <td>" + "Operator" + "</td> <td>" + "Result" + "</td>" + "<br>");
+	document.write("<tr> <td>" + num1 + "</td> <td>" + num2 + "</td> <td>" + op + "</td> <td>" + result + "</td>");
+	break;
+	
+	case '^':
+
+	var result = Math.pow(num1,2); // change exponent value if you like //
+	var temp = Math.pow(num2,2); // change exponent value if you like //
+	document.write("<table border='1'> <tr> <td>" + "num1" + "</td> <td>" + "num2" + "</td> <td>" + "Operator" + "</td> <td>" + "Number 1 (Result)" + "</td> <td>" + "Number 2 (Result)" + "</td>" + "<br>");
+	document.write("<tr> <td>" + num1 + "</td> <td>" + num2 + "</td> <td>" + op + "</td> <td>" + result + "</td> <td>" + temp + "</td>");
+	break;
+	
+	
+	case 'log':
+	var result = Math.log(num1); 
+	var temp = Math.log(num2);  
+	document.write("<table border='1'> <tr> <td>" + "num1" + "</td> <td>" + "num2" + "</td> <td>" + "Operator" + "</td> <td>" + "Number 1 (Result)" + "</td> <td>" + "Number 2 (Result)" + "</td>" + "<br>");
+	document.write("<tr> <td>" + num1 + "</td> <td>" + num2 + "</td> <td>" + op + "</td> <td>" + result + "</td> <td>" + temp + "</td>");
+	break;
+	
+	case 'root':
+	var result = Math.sqrt(num1); 
+	var temp = Math.sqrt(num2); 
+	document.write("<table border='1'> <tr> <td>" + "num1" + "</td> <td>" + "num2" + "</td> <td>" + "Operator" + "</td> <td>" + "Number 1 (Result)" + "</td> <td>" + "Number 2 (Result)" + "</td>" + "<br>");
+	document.write("<tr> <td>" + num1 + "</td> <td>" + num2 + "</td> <td>" + op + "</td> <td>" + result + "</td> <td>" + temp + "</td>");
+	break;
+	
+	
+	case 'tan':
+	var result = Math.tan(num1); 
+	var temp = Math.tan(num2); 
+	document.write("<table border='1'> <tr> <td>" + "num1" + "</td> <td>" + "num2" + "</td> <td>" + "Operator" + "</td> <td>" + "Number 1 (Result)" + "</td> <td>" + "Number 2 (Result)" + "</td>" + "<br>");
+	document.write("<tr> <td>" + num1 + "</td> <td>" + num2 + "</td> <td>" + op + "</td> <td>" + result + "</td> <td>" + temp + "</td>");
+	break;
+	
+	case 'sin':
+	var result = Math.sin(num1); // change exponent value if you like //
+	var temp = Math.sin(num2); // change exponent value if you like //
+	document.write("<table border='1'> <tr> <td>" + "num1" + "</td> <td>" + "num2" + "</td> <td>" + "Operator" + "</td> <td>" + "Number 1 (Result)" + "</td> <td>" + "Number 2 (Result)" + "</td>" + "<br>");
+	document.write("<tr> <td>" + num1 + "</td> <td>" + num2 + "</td> <td>" + op + "</td> <td>" + result + "</td> <td>" + temp + "</td>");
+	break;
+	
+	case 'cos':
+	var result = Math.cos(num1); // change exponent value if you like //
+	var temp = Math.cos(num2); // change exponent value if you like //
+	document.write("<table border='1'> <tr> <td>" + "num1" + "</td> <td>" + "num2" + "</td> <td>" + "Operator" + "</td> <td>" + "Number 1 (Result)" + "</td> <td>" + "Number 2 (Result)" + "</td>" + "<br>");
+	document.write("<tr> <td>" + num1 + "</td> <td>" + num2 + "</td> <td>" + op + "</td> <td>" + result + "</td> <td>" + temp + "</td>");
+	break;
+	
+	
+	default:
+	alert("Invalid input");
+	break;
+
+	} // switch case end //
+
+</script>
+
+
+
+</body>
+</html>

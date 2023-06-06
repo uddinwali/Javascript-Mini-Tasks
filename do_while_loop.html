@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Do While Table Print</title>
+
+<style>
+table
+{
+	width:300px;
+	border-color:#093;
+	margin:150px;
+	
+}
+
+table td
+{
+	text-align:center;
+	color:white;
+	background-color:#099;
+}
+
+
+
+</style>
+</head>
+
+<body>
+<script>
+                            //DO WHILE TABLE PRINT //
+
+var num = parseInt(prompt("Enter number to be print : ",0));
+var range = parseInt(prompt("Enter Range of Table  : ",0));
+var i = parseInt(1);
+
+document.write(' <center> <table border="1"> </center> ');
+do {
+	var res = num*i;
+	document.write("<tr> <td>" + num + " x " + i + " = " + res + "</td> </tr>")
+	i++;
+	}
+
+	while(i <= range)
+
+
+
+
+</script>
+</body>
+</html>
